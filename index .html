@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Présentation Flexbox</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="tete">
+            Présentation Flexbox
+        </div>
+        <div class="signature">
+            by Raphaël, Quentin, Patrick et Perceval : )
+        </div>
+        <div class="simplon">
+            <img src="images/Simplon Logo9.png" alt="">
+        </div>
+
+
+
+
+
+    </header>
+    <div class="HolyGrail-body">
+        <main class="HolyGrail-content">
+
+
+
+            <div class="Site">
+                <main class="Site-content">
+                    <div id="mediaObject">
+
+                        <div class="Media">
+                            <img class="Media-figure" src="images/prof.png" alt="">
+                            <p class="Media-body">
+                                <strong><span>Media object :</span></strong><br><br> Flex peut créer des "media objects" divers sans se prendre la tête avec les plus classiques overflow, clearfix ou autres solutions parfois utiles mais souvent pas pratiques.
+                                Les emplacements du texte et de l'image peuvent être modifiés facilement sans toucher au html, et il est tout aussi simple d'intégrer un media object dans un autre "parent" que d'en créer un seul</p>
+                        </div>
+                    </div>
+
+
+                    <iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="800" height="404" src="https://prezi.com/embed/y7ijuqe50o65/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=1&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI5KzNtWHNJakVGOGlIL0xDblhPN3o3dXZBPT0&amp;landing_sign=ng_TIZzOHzBqxkYesxf4kFaSyUzFy9BxrMm4uhF1nHo"></iframe></main>
+
+                <a href="gif.html" class="buttonlink">MERCI</a>
+            </div>
+
+
+
+        </main>
+        <nav class="HolyGrail-nav">
+            <div class="nav">
+                <strong><span>Holy Grail Layout:</span></strong><br>
+                <br> À la base, le Holy Grail Layout est une page avec un en-tête, un pied de page et trois colonnes.<br><br> Le Holy Grail Layout est un classique des problèmes avec CSS: l'objectif est avoir un centre fluide avec des barres latérales
+                de largeur fixe. La colonne centrale doit être chargée en premier dans le HTML et toutes les colonnes doivent être de la même hauteur.<br><br> Flexbox règle ce problème facilement !
+            </div>
+
+
+
+        </nav>
+        <aside class="HolyGrail-ads">
+            <ul class="liens"><strong><span>Tutoriel :</span></strong><br><br>
+                <li><a href="http://www.supinfo.com/articles/single/1534-presentation-flexbox-template">Supinfo</a></li>
+                <li><a href="https://philipwalton.github.io/solved-by-flexbox/">Solved</a></li>
+                <li><a href="http://flex.simplon-lyon.fr/">Simplon Lyon</a></li>
+                <li><a href="https://www.alsacreations.com/xmedia/tools/flexbox-cheatsheet.pdf">Alsacreation</a></li>
+                <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Css-tricks</a></li>
+                <li><a href="https://la-cascade.io/flexbox-guide-complet/">Flexbox guide</a></li>
+                <li><a href="http://codepen.io/enxaneta/full/adLPwv/">Codepen</a></li>
+                <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Disposition_des_bo%C3%AEtes_flexibles_CSS/Utilisation_des_flexbox_en_CSS">MDN</a></li>
+                <li><a href="https://github.com/snapeuh/flexbox-presentation">Github</a></li>
+            </ul>
+            <ul class="liens"><strong><span>Jeux :</span></strong><br><br>
+                <li><a href="http://cyrilvernier.net/teaching/draft/exercices-flexbox.html">Quelques exreçices</a></li>
+                <li><a href="http://flexboxfroggy.com/">MR CROA</a></li>
+                <li><a href="http://www.flexboxdefense.com/">Tower defense</a></li>
+                <li><a href="https://preview.webflow.com/preview/flexbox-game?preview=d1a26b027c4803817087a91c651e321f&m=1">Webflow</a></li>
+            </ul>
+        </aside>
+    </div>
+    <div class="centrage">
+        <strong><span>Vertical Centering :</span></strong><br><br> Flex permet des alignements bien plus simples que le CSS 'classique', y compris le centrage vertical, habituellement un casse tête sans nom, avec des possibilités qui devraient théoriquement
+        fonctionner, mais finissent pas alourdir le code sans effet notable (voire, dans certains cas, cassent la moitié de la page). Flexbox aligne efficacement et proprement, que l'élément en question ait ou non des éléments siblings:<br><br>
+        <div class="Aligner">
+            <div class="Aligner-item Aligner-item--top">
+                <strong>align-self: flex-start;</strong>
+            </div>
+            <div class="Aligner-item"><strong>justify-content: center;</strong></div>
+            <div class="Aligner-item Aligner-item--bottom"><strong>align-self: flex-end;</strong></div>
+        </div>
+    </div>
+
+    <div class="inputs">
+        <div class="input">
+            <span><strong>Input Add-ons :<br><br></strong></span> En raison de la façon dont le dimensionnement des entrées fonctionne en CSS, il est presque impossible d'ajouter ou d'ajouter un autre élément et de faire en sorte que le champ d'entrée
+            se comporte de manière fluide et occupe l'espace restant. Avec Flexbox, tous ces problèmes disparaissent, et le code est très simple. En outre, vous obtenez des champ de saisie et d'add-on de la même hauteur
+
+        </div>
+        <div class="Form">
+            <div class="InputAddOn">
+                <input class="InputAddOn-field">
+                <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-envelope"></span> 
+        </button> Add-on Appended
+            </div>
+
+            <!-- prepending -->
+            <div class="InputAddOn">
+                <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-search"></span>
+        </button>
+                <input class="InputAddOn-field"> Add-on Prepended
+            </div>
+
+            <!-- both -->
+            <div class="InputAddOn">
+                <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-eye-open"></span>
+        </button>
+                <input class="InputAddOn-field">
+                <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-piggy-bank"></span> 
+        </button> Appended and Prepended Add-ons
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <strong><span>Sticky Footer:</span><br>
+                    <br> Obtenir le footer de la page avec du contenu clairsemé est quelque chose que chaque développeur a essayé au moins une fois dans sa vie. Et pour la plupart c'est mission accomplie ! Pourtant, ces solutions représentent un gros problème
+                    si la taille du footer est inconnue.
+                    <br> Flexbox répond parfaitement à ce type de problème. Bien que connu pour la pose horizontale, il fonctionne aussi bien pour la pose verticale. Tout ce que vous avez à faire est d'envelopper les sections verticales dans un conteneur flex et
+                    de choisir ceux que vous souhaitez étendre. Ils prendront automatiquement tout l'espace disponible dans leur conteneur.</strong>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+
+</html>

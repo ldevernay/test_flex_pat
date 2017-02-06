@@ -1,0 +1,289 @@
+.Media {
+    display: flex;
+    align-items: flex-start;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.Media-figure {
+    margin-right: 1em;
+}
+
+.Media-body {
+    flex: 1;
+}
+
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.Site-content {
+    flex: 1;
+}
+
+.gif {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.HolyGrail,
+.HolyGrail-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.HolyGrail-nav {
+    order: -1;
+    color: white;
+}
+
+@media (min-width: 500px) {
+    .HolyGrail-body {
+        flex-direction: row;
+        flex: 1;
+    }
+    .HolyGrail-content {
+        flex: 1;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #E8E8E8;
+    }
+    .HolyGrail-nav,
+    .HolyGrail-ads {
+        /* 12em is the width of the columns */
+        flex: 0 0 12em;
+        background-image: linear-gradient( #595A5B, darkgrey);
+        padding: 10px;
+    }
+}
+
+#iframe_container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+footer {
+    font-family: 'Coming Soon', cursive;
+    background-image: linear-gradient( #535455, #1D1F20);
+    color: silver;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding: 10px;
+}
+
+p {
+    font-family: 'Coming Soon', cursive;
+}
+
+body {
+    font-family: 'Coming Soon', cursive;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+header {
+    background-color: #1D1F20;
+    background-image: linear-gradient(#1D1F20, #595A5B);
+}
+
+.tete {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+    font-family: garamond, arial, sans-serif;
+    padding-top: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.signature {
+    color: white;
+    font-size: 20px;
+    font-family: garamond, arial, sans-serif;
+    display: flex;
+    justify-content: flex-end;    
+    margin-right: 60px;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.simplon {
+    margin-top: -90px;
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+
+a:hover {
+    color: red;
+}
+
+.liens {
+    list-style: none;
+}
+
+a:visited {
+    text-shadow: 2px 2px 2px blue;
+}
+
+a {
+    text-decoration: none;
+    text-shadow: 2px 2px 2px black;
+    color: #c3c6cc;
+}
+
+.ui-btn {
+    text-shadow: none;
+    display: flex;
+    justify-content: center;
+}
+
+.Aligner {
+    border: solid 1px black;
+    width: 80%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    color: white;
+}
+
+.Aligner-item {
+    max-width: 50%;
+}
+
+.Aligner-item--top {
+    align-self: flex-start;
+}
+
+.Aligner-item--bottom {
+    align-self: flex-end;
+}
+
+.gifs {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    font-family: 'Coming Soon', cursive;
+    font-size: 50px;
+}
+
+.perceval {
+    width: auto;
+    height: auto;
+}
+
+.karadoc {
+    background-color: #1d1f20;
+}
+
+.buttonlink {
+    display: block;
+    border-style: solid;
+    border-color: #bbb #888 #666 #aaa;
+    border-width: 3px 4px 4px 3px;
+    width: 9em;
+    height: 2em;
+    background: #ccc;
+    color: #333;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 900;
+    margin: 20px auto;
+    text-shadow: none;
+}
+
+.buttonlink:hover {
+    border-color: #666 #aaa #bbb #888;
+    border-width: 4px 3px 3px 4px;
+    color: #000;
+}
+
+.centrage {
+    background-image: linear-gradient(darkgrey, #8F8F90);
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+span {
+    color: red;
+}
+
+InputAddOn {
+    display: flex;
+    margin-bottom: 1.5em;
+}
+
+.InputAddOn-field {
+    flex: 1;
+}
+
+.InputAddOn-field:not(:first-child) {
+    border-left: 0;
+}
+
+.InputAddOn-field:not(:last-child) {
+    border-right: 0;
+}
+
+.InputAddOn-item {
+    background-color: rgba(147, 128, 108, 0.1);
+    font: inherit;
+    font-weight: normal;
+}
+
+.InputAddOn-field,
+.InputAddOn-item {
+    border: 1px solid rgba(147, 128, 108, 0.25);
+    padding: 0.5em 0.75em;
+}
+
+.InputAddOn-field:first-child,
+.InputAddOn-item:first-child {
+    border-radius: 2px 0 0 2px;
+}
+
+.InputAddOn-field:last-child,
+.InputAddOn-item:last-child {
+    border-radius: 0 2px 2px 0;
+}
+
+.input {
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+
+.Form {
+    flex-direction: row;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.inputs {
+    background-image: linear-gradient(#8F8F90, #535455);
+}
